@@ -1,0 +1,18 @@
+.choices {
+  margin-bottom: 15px;
+}
+
+.choices__inner {
+  min-height: 34px;
+  padding: 0;
+  border-radius: 6px;
+  background-color: #E9ECEF;
+}
+
+.choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 0;
+}
+
+.choices__list--single {
+  padding: 6px 10px;
+}

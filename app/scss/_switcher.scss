@@ -1,0 +1,63 @@
+.content-switch {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.switcher {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 210px;
+  height: 42px;
+  border-radius: 8px;
+
+  input {
+    appearance: none;
+    position: relative;
+    width: 210px;
+    height: 42px;
+    border-radius: 8px;
+    background-color: $black;
+    outline: none;
+    cursor: pointer;
+    transition: 0.25s -0.1s;
+    &:before,
+    &:after {
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $white;
+    }
+    &:before {
+      content: $switch-text1;
+      left: 20px;
+    }
+    &:after {
+      content: $switch-text2;
+      right: 20px;
+    }
+    &:checked + label {
+      left: 4px;
+      right: 105px;
+      transition: left 0.5s ease-out, right 0.4s 0.2s ease-out;
+    }
+    &:not(:checked) + label {
+      left: 105px;
+      right: 4px;
+      transition: left 0.4s 0.2s ease-out, right 0.5s ease-out;
+    }
+  }
+  label {
+    background-color: $grey;
+    z-index: 1;
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    border-radius: 6px;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+}

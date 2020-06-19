@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="Вёрстка" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6.-Поле.-Ховер-на-строку" transform="translate(-18.000000, -83.000000)" fill="#222222" fill-rule="nonzero">
+            <path d="M24,92 L22,92 L22,94 L24,94 L24,92 Z M28,92 L26,92 L26,94 L28,94 L28,92 Z M32,92 L30,92 L30,94 L32,94 L32,92 Z M34,85 L33,85 L33,83 L31,83 L31,85 L23,85 L23,83 L21,83 L21,85 L20,85 C18.89,85 18.01,85.9 18.01,87 L18,101 C18,102.1 18.89,103 20,103 L34,103 C35.1,103 36,102.1 36,101 L36,87 C36,85.9 35.1,85 34,85 Z M34,101 L20,101 L20,90 L34,90 L34,101 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

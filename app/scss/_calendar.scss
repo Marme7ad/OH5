@@ -1,0 +1,102 @@
+@mixin calendar-before-circle($color) {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  z-index: -1;
+  border-radius: 50%;
+  background-color: $color;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.calendar {
+  background-color: #fff;
+  width: 268px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border-radius: 9px;
+  padding-bottom: 5px;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 17px 11px 20px;
+    border-bottom: 1px solid rgb(218, 224, 228);
+
+    &__arrows {
+      display: flex;
+    }
+
+    &__arrow {
+      width: 16px;
+      height: 16px;
+      border: none;
+      background-color: transparent;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &--left {
+        background-image: url(../images/src/icons/calendar-arrow-left.svg);
+      }
+      &--right {
+        margin-left: 10px;
+        background-image: url(../images/src/icons/calendar-arrow-right.svg);
+      }
+    }
+  }
+
+  &-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  &-item {
+    flex-shrink: 1;
+    font-size: 14px;
+    font-weight: 400;
+    width: calc(100% / 7);
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+
+    &.grey {
+      color: rgb(167, 178, 188);
+      pointer-events: none;
+    }
+
+    &.day {
+      font-size: 12px;
+      padding-top: 12px;
+      margin-bottom: 2px;
+    }
+
+    &.active {
+      color: #fff;
+      font-weight: 500;
+
+      &::before {
+
+        @include calendar-before-circle($accent);
+
+      }
+    }
+
+    &:not(.day):not(.active):hover::before {
+
+      @include calendar-before-circle(rgb(233, 236, 239));
+
+    }
+  }
+}

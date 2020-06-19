@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>path2_fill-link</title>
+    <g id="Вёрстка" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.9">
+        <g id="6.-Поле.-Ховер-на-строку" transform="translate(-1248.000000, -341.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-4" transform="translate(1235.000000, 325.000000)">
+                <g id="zoom">
+                    <g id="Union" transform="translate(13.000000, 16.000000)">
+                        <g id="path2_fill-link">
+                            <path d="M7,0 C6.44727,0 6,0.447754 6,1 L6,6 L1,6 C0.447266,6 0,6.44775 0,7 C0,7.55225 0.447266,8 1,8 L6,8 L6,13 C6,13.5522 6.44727,14 7,14 C7.55273,14 8,13.5522 8,13 L8,8 L13,8 C13.5527,8 14,7.55225 14,7 C14,6.44775 13.5527,6 13,6 L8,6 L8,1 C8,0.447754 7.55273,0 7,0 Z" id="path2_fill"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

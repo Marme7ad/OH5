@@ -1,10 +1,16 @@
 // USER VARIABLES SECTION
 
-$accent: orange; // Accent Color
+$accent: #27ae60; // Accent Color
+$black: #222;
+$grey: #383838;
+$white: #ffffff;
 $fontsize: 16px; // Body Font Size
-$textcolor: #333; // Text Color
+$textcolor: #222; // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
-$roboto: Roboto, sans-serif; // Roboto Font Family
+$graphik: Graphik LC Web, sans-serif; // Roboto Font Family
+
+$switch-text1: "Матрица";
+$switch-text2: "Шторка";
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 20px;
@@ -12,51 +18,125 @@ $gutter: $grid-gutter-width;
 
 // IMPORT SECTION
 
-@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
-@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
-// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
-// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss"; // Bootstrap Reboot collection
+@import "choice";
 
 // FONTS LOAD SECTION
 
 @mixin font($fname, $fstyle, $fweight, $furl) {
-	@font-face {
-		font-family: $fname;
-		font-style: $fstyle;
-		font-weight: $fweight;
-		// font-display: swap; // Uncomment to initially display system fonts
-		src: local($fname), url($furl) format('woff2');
-	}
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    // font-display: swap; // Uncomment to initially display system fonts
+    src: local($fname), url($furl) format("woff2");
+  }
 }
 
-@include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2');
-@include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2');
-@include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2');
-@include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2');
+@include font("Graphik", normal, 400, "../fonts/Graphik-LC-Web-Regular.woff2");
+@include font("Graphik", normal, 500, "../fonts/Graphik-LC-Web-Medium.woff2");
+@include font("Graphik", normal, 600, "../fonts/Graphik-LC-Web-Bold.woff2");
+@include font("Graphik", normal, 700, "../fonts/Graphik-LC-Web-Super.woff2");
 
 // GENERAL DOCUMENT STYLES
 
 ::placeholder {
-	color: #666;
+  color: #666;
 }
 
 ::selection {
-	background-color: $accent;
-	color: #fff;
+  background-color: $accent;
+  color: #fff;
 }
 
-input, textarea {
-	outline: none;
-	&:focus:required:invalid { border-color: red }
-	&:required:valid { border-color: green }
+input,
+textarea {
+  outline: none;
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  &:required:valid {
+    border-color: green;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 body {
-	font-family: $roboto;
-	font-size: $fontsize;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.65;
-	overflow-x: hidden;
-	color: $textcolor;
+  font-family: $graphik;
+  font-size: $fontsize;
+  font-weight: 400;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  overflow-x: hidden;
+  color: $textcolor;
+  background-color: #192021;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .25s ease-out;
+
+  &:focus, &:hover {
+    outline: none;
+    box-shadow: 0 0 5px rgba($dark, .5);
+  }
+
+  &--green {
+    background-color: $accent;
+    color: $white;
+  }
+
+  &--upload {
+    margin-bottom: 0;
+
+    input {
+      position: absolute;
+      margin: -1px;
+      padding: 0;
+      width: 1px;
+      height: 1px;
+      white-space: nowrap;
+      border: 0;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+  }
+
+  &--icon {
+    margin-right: 5px;
+  }
+
+  &--big {
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  &--plus {
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/dest/icons/plus.svg);
+    background-position: center;
+  }
 }

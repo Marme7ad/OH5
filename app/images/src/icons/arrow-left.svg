@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="Вёрстка" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6.-Поле.-Ховер-на-строку" transform="translate(-74.000000, -20.000000)" fill="#222222" fill-rule="nonzero">
+            <g id="Group-11" transform="translate(54.000000, 0.000000)">
+                <polygon id="Shape" transform="translate(27.000000, 26.000000) scale(-1, 1) translate(-27.000000, -26.000000) " points="28 20 26.59 21.41 30.17 25 20 25 20 27 30.17 27 26.59 30.59 28 32 34 26"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

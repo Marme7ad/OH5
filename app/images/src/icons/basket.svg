@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="14px" viewBox="0 0 10 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic_delete</title>
+    <g id="Вёрстка" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6.-Поле.-Ховер-на-строку" transform="translate(-321.000000, -66.000000)" fill="#222222" fill-rule="nonzero">
+            <g id="Group-11" transform="translate(54.000000, 0.000000)">
+                <g id="Group-12" transform="translate(0.000000, 61.000000)">
+                    <g id="ic_delete_black" transform="translate(264.000000, 4.000000)">
+                        <path d="M6.75,1.5 L6.125,2.24 L3,2.24 L3,3.5 L13,3.5 L13,2.24 L9.875,2.24 L9.25,1.5 L6.75,1.5 Z M4,4.5 L4,12.75 C4,13.4375 4.5,14.5 5.75,14.5 L10.25,14.5 C11.5,14.5 12,13.4375 12,12.75 L12,4.5 L4,4.5 Z M6,6.5 L7,6.5 L7,12.5 L6,12.5 L6,6.5 Z M9,6.5 L10,6.5 L10,12.5 L9,12.5 L9,6.5 Z" id="ic_delete"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

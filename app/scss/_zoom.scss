@@ -1,0 +1,53 @@
+.zoom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $black;
+  width: 40px;
+  height: 82px;
+  box-shadow: 0 5px 10px 0 #000;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &-devider {
+    position: absolute;
+    top: 40px;
+    left: 9px;
+    width: 22px;
+    height: 2px;
+    background-color: rgba($white, .1);
+  }
+
+  &-in, &-out {
+    width: 40px;
+    height: 40px;
+    border: 2px solid $black;
+    background-color: $black;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: border-color .25s ease-out;
+
+    &:focus {
+      outline: none;
+      border-color: lighten($grey, 20%);
+    }
+
+    &:hover {
+      border-color: lighten($grey, 20%);
+    }
+  }
+
+  &-in {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: 14px 14px;
+    background-image: url(../images/src/icons/plus.svg);
+  }
+
+  &-out {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-size: 14px 2px;
+    background-image: url(../images/src/icons/minus.svg);
+  }
+}

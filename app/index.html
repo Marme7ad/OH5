@@ -1,29 +1,219 @@
 <!DOCTYPE html>
 <html lang="">
-
 <head>
-
 	<meta charset="utf-8">
 	<title>OptimizedHTML 5</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dest/preview.jpg">
 	<link rel="stylesheet" href="css/app.min.css">
 
 </head>
 
 <body>
 
-	<!-- CUSTOM HTML -->
+  <!-- CUSTOM HTML -->
 
-	<div class="container" style="max-width: 700px; margin: auto">
+	<div class="page">
+    <aside class="left-panel">
+      <div class="left-panel__navigation">
+        <a href="#" class="logo"></a>
 
-		<img src="images/dest/preview.jpg" alt="Start HTML5 Template" width="100%"><br><br>
-		<h2>Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
+        <nav class="navigation">
+          <ul class="js-navigation-items">
+            <li class="active">
+              <a href="#" class="navigation-item navigation-item--big">
+                <span class="navigation-item__icon icon-calendar"></span><span class="text">Calendar</span></a>
+            </li>
+            <li>
+              <a href="#" class="navigation-item">
+                <span class="navigation-item__icon icon-location"></span><span class="text">Location</span></a>
+            </li>
+            <li class="profile">
+              <a href="#" class="navigation-item navigation-item--big">
+                <span class="navigation-item__icon icon-profile"></span><span class="text">Profile</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="left-panel__sitebar">
+        <div class="sitebar js-sitebar-start active">
+          <div class="sitebar-header">
+            <button class="sitebar-header__icon sitebar-header__icon--close js-toggle-navigation">
+              <span></span>
+            </button>
+            <div class="sitebar-header__content">
+              <div class="sitebar-header__content-title">Calendar</div>
+            </div>
+          </div>
+          <div class="sitebar-content">
+            <div class="calendar">
+              <div class="calendar-header">
+                <div class="calendar-header__data">
+                  Сентябрь 2018
+                </div>
+                <div class="calendar-header__arrows">
+                  <button class="calendar-header__arrow calendar-header__arrow--left"></button>
+                  <button class="calendar-header__arrow calendar-header__arrow--right"></button>
+                </div>
+              </div>
+              <div class="calenda-week">
+                <div class="calendar-row">
+                  <div class="calendar-item grey day">ПН</div>
+                  <div class="calendar-item grey day">ВТ</div>
+                  <div class="calendar-item grey day">СР</div>
+                  <div class="calendar-item grey day">ЧТ</div>
+                  <div class="calendar-item grey day">ПТ</div>
+                  <div class="calendar-item grey day">СБ</div>
+                  <div class="calendar-item grey day">ВС</div>
+                </div>
+              </div>
+              <div class="calendar-days">
+                <div class="calendar-row">
+                  <div class="calendar-item grey">30</div>
+                  <div class="calendar-item">1</div>
+                  <div class="calendar-item">2</div>
+                  <div class="calendar-item active">3</div>
+                  <div class="calendar-item">4</div>
+                  <div class="calendar-item">5</div>
+                  <div class="calendar-item">6</div>
+                </div>
+                <div class="calendar-row">
+                  <div class="calendar-item">7</div>
+                  <div class="calendar-item">8</div>
+                  <div class="calendar-item">9</div>
+                  <div class="calendar-item">10</div>
+                  <div class="calendar-item">11</div>
+                  <div class="calendar-item">12</div>
+                  <div class="calendar-item">13</div>
+                </div>
+                <div class="calendar-row">
+                  <div class="calendar-item">14</div>
+                  <div class="calendar-item">15</div>
+                  <div class="calendar-item">16</div>
+                  <div class="calendar-item">17</div>
+                  <div class="calendar-item">18</div>
+                  <div class="calendar-item">19</div>
+                  <div class="calendar-item">20</div>
+                </div>
+                <div class="calendar-row">
+                  <div class="calendar-item">21</div>
+                  <div class="calendar-item">22</div>
+                  <div class="calendar-item">23</div>
+                  <div class="calendar-item">24</div>
+                  <div class="calendar-item">25</div>
+                  <div class="calendar-item">26</div>
+                  <div class="calendar-item">27</div>
+                </div>
+                <div class="calendar-row">
+                  <div class="calendar-item">28</div>
+                  <div class="calendar-item">29</div>
+                  <div class="calendar-item">30</div>
+                  <div class="calendar-item">31</div>
+                  <div class="calendar-item grey">1</div>
+                  <div class="calendar-item grey">2</div>
+                  <div class="calendar-item grey">3</div>
+                </div>
+              </div>
+            </div>
+            <div class="sitebar-content__buttons">
+              <button class="btn btn--big btn--green" id="go-forward">Click Me</button>
+            </div>
+          </div>
+        </div>
+        <div class="sitebar js-sitebar-one">
+          <header class="sitebar-header">
+            <button id="go-back" class="sitebar-header__icon sitebar-header__icon--arrow"></button>
+            <div class="sitebar-header__content">
+              <div class="sitebar-header__content-title">192. Ждановичи, 17 га</div>
+              <div class="sitebar-header__content-subtitle">Пшеница</div>
+            </div>
+          </header>
+          <div class="sitebar-content">
+            <div class="layer-item">
+              <div class="layer-item__row layer-item__row-top">
+                <div class="layer-item__left js-layer">
+                  <div class="layer-item__arrow"></div>
+                  <div class="layer-item__title">Рельеф</div>
+                  <div class="layer-item__subtitle">25 мая 2019</div>
+                  <div class="layer-item__icon layer-item__icon--eye"></div>
+                </div>
+                <div class="layer-item__right">
+                  <div class="layer-item__icon layer-item__icon--copy"></div>
+                  <div class="layer-item__icon layer-item__icon--basket"></div>
+                </div>
+              </div>
+              <div class="layer-item__row layer-item__row-bottom">
+                <div class="w-100">
+                  <select name="select" id="select" class="js-choice">
+                    <option value="value 1">SRTM</option>
+                    <option value="value 2">BTGD</option>
+                    <option value="value 3">MMRA</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="layer-item">
+              <div class="layer-item__row layer-item__row-top">
+                <div class="layer-item__left layer-item__left--disabled">
+                  <div class="layer-item__tip">Можно сравнивать максимум 9 слоёв</div>
+                  <div class="layer-item__lock"></div>
+                  <div class="layer-item__title">Вегетация</div>
+                  <div class="layer-item__subtitle">25 мая 2019</div>
+                  <div class="layer-item__icon layer-item__icon--eye"></div>
+                </div>
+                <div class="layer-item__right">
+                  <div class="layer-item__icon layer-item__icon--copy"></div>
+                  <div class="layer-item__icon layer-item__icon--basket"></div>
+                </div>
+              </div>
+              <div class="layer-item__row layer-item__row-bottom">
+                <div class="w-100">
+                  <select name="select" id="select" class="js-choice">
+                    <option value="value 1">SRTM</option>
+                    <option value="value 2">BTGD</option>
+                    <option value="value 3">MMRA</option>
+                  </select>
+                </div>
+              </div>
+            </div>
 
-	</div>
+            <div class="sitebar-content__buttons">
+              <label class="btn btn--big btn--green btn--upload">
+                <input id="upload-file" type="file" class="" />
+                <div class="btn--icon btn--plus"></div> Загрузить файл
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <main class="content">
+      <div class="content-maps">
+        <div class="map">
+          <div class="map-title map-title--left">Вегетация, 25 мая 2019</div>
+          <img src="./images/src/grid-left.jpg" alt="map 1">
+        </div>
+        <div class="map">
+          <div class="map-title map-title--right">Рельеф, SRTM</div>
+          <img src="./images/src/grid-right.png" alt="map 2">
+        </div>
+      </div>
+      <div class="content-switch">
+        <span class="switcher">
+            <input type="checkbox" id="switcher">
+            <label for="switcher"></label>
+        </span>
+      </div>
+      <div class="content-zoom">
+        <div class="zoom">
+          <button class="zoom-in"></button>
+          <button class="zoom-out"></button>
+          <div class="zoom-devider"></div>
+        </div>
+      </div>
+    </main>
+  </div>
 
 	<script src="js/app.min.js"></script>
 
